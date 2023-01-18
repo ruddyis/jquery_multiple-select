@@ -1,0 +1,104 @@
+::-webkit-scrollbar
+{
+	width: 9px;
+	height: 9px;
+}
+::-webkit-scrollbar-track-piece
+{
+	background-color: #ebebeb;
+	-webkit-border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:vertical
+{
+	height: 32px;
+	background-color: #ccc;
+	-webkit-border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:horizontal
+{
+	width: 32px;
+	background-color: #ccc;
+	-webkit-border-radius: 4px;
+}
+.multiple-select{
+	position: relative;
+	height:30px;
+}
+.multiple-select .inputWrap{
+	position: relative;
+	width:100%;
+	height:100%;
+	border: 1px solid #e5e5e5;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.multiple-select .multiple-select-option{
+	width: 100%;
+	max-height: 250px;
+	height:auto;
+	display:none;
+	overflow-y: auto;
+	position: absolute;
+	background:#fff;
+	border-radius:4px;
+	margin-top:-1px;
+	z-index:99;
+	color:#999999;
+	border:1px solid #e2e6ec;
+	box-shadow: 0px 4px 8px 0px rgba(128,139,162,0.2);
+}
+.multiple-select .multiple-select-option div{
+	padding:0 10px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+    position: relative;
+}
+.multiple-select .inputWrap>p{
+	height:100%;
+	line-height: inherit;
+	margin-right: 30px;
+	padding-left: 5px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.multiple-select .inputWrap>i{
+	position: absolute;
+	width:30px;
+	height:100%;
+	background-repeat: no-repeat;
+	background-position:center center;
+	right: 0;
+	top: 0;
+}
+.multiple-select .fa-angle-down{
+	background-image:url(../image/select-icon-down.png);
+}
+.multiple-select .fa-angle-up{
+	background-image:url(../image/select-icon-up.png);
+}
+.multiple-select-option div{
+	cursor: pointer;
+}
+.multiple-select-option div.selected{
+	background-color: #f4f6f9;
+}
+.multiple-select-option div:hover{
+	background: #f4f6f9;
+	color:#666;
+}
+
+.multiple-select-option div>i{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 2px;
+    background-color: #fff;
+    background: url(../image/icon-check.png);
+    margin-right: 10px;
+}
+.multiple-select-option div.selected>i{
+    background: url(../image/icon-checked.png);
+    background-position: center;
+}
